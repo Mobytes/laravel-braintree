@@ -36,13 +36,6 @@ class LaravelBraintreeServiceProvider extends ServiceProvider
             $this->app['config']->get('laravel-braintree::braintree.privateKey')
         );
 
-        $encryptionKey = $this->app['config']->get('laravel-braintree::braintree.clientSideEncryptionKey');
-        // Register blade compiler for the Stripe publishable key.
-        $blade = $this->app['view']->getEngineResolver()->resolve('blade')->getCompiler();
-        $blade->extend(function ($value, $compiler) use ($encryptionKey) {
-            $matcher = "/(?<!\w)(\s*)@braintreeClientSideEncryptionKey/";
-            return preg_replace($matcher, $encryptionKey, $value);
-        });
     }
 
     /**

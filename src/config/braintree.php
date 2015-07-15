@@ -21,6 +21,5 @@ return array(
     'environment'             => 'sandbox',
     'merchantId'              => 'my-merchant-id',
     'publicKey'               => 'my-public-key',
-    'privateKey'              => 'my-private-key',
-    'clientSideEncryptionKey' => Braintree_ClientToken::generate(),
+    'privateKey'              => 'my-private-key'
 );
