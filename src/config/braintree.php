@@ -22,5 +22,5 @@ return array(
     'merchantId'              => 'my-merchant-id',
     'publicKey'               => 'my-public-key',
     'privateKey'              => 'my-private-key',
-    'clientSideEncryptionKey' => 'my-client-side-encryption-key',
+    'clientSideEncryptionKey' => Braintree_ClientToken::generate(),
 );
