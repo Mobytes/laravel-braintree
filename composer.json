@@ -1,0 +1,24 @@
+{
+    "name": "evasquez/laravel-braintree",
+    "description": "",
+    "authors": [
+        {
+            "name": "eveR Vásquez",
+            "email": "pever@unsm.edu.pe"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "braintree/braintree_php" : "3.x"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Evasquez\\LaravelBraintree\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
